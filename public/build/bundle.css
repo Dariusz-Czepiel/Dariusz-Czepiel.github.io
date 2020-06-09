@@ -1,0 +1,6 @@
+#root.svelte-62kyij.svelte-62kyij{height:150vh;border:1px solid}#gridRoot.svelte-62kyij.svelte-62kyij{display:grid;height:100%}.gridSide.svelte-62kyij.svelte-62kyij{grid-template-areas:"appBar appBar"
+			"sideNav content";grid-template-rows:auto 1fr;grid-template-columns:auto 1fr}.gridHover.svelte-62kyij.svelte-62kyij{grid-template-areas:"sideNav appBar"
+			"sideNav content";grid-template-rows:auto 1fr;grid-template-columns:auto 1fr}.gridFull.svelte-62kyij.svelte-62kyij{grid-template-areas:"sideNav appBar"
+			"sideNav content";grid-template-rows:auto 1fr;grid-template-columns:auto 1fr}.sidebarHover.svelte-62kyij.svelte-62kyij{position:fixed;height:100%}div.svelte-62kyij.svelte-62kyij{background-color:'yellow'}header.svelte-62kyij.svelte-62kyij{position:sticky;top:0;grid-area:appBar;background-color:yellow}#gridRoot.svelte-62kyij>nav.svelte-62kyij{grid-area:sideNav;width:15vw;background-color:lightgreen}#gridRoot.svelte-62kyij>main.svelte-62kyij{grid-area:content;background-color:orange}
+
+/*# sourceMappingURL=bundle.css.map */
