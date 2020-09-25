@@ -1,0 +1,8 @@
+header.svelte-15vldyv{background-color:antiquewhite;position:sticky}footer.svelte-15vldyv{padding:10px 20px;background-color:antiquewhite}main.svelte-15vldyv{text-align:center;max-width:240px;padding:1em;margin:0 auto;height:100%}@media(min-width: 640px){main.svelte-15vldyv{max-width:none}}
+.footer-elem.svelte-3hxstp{padding:2px 0px}
+nav.svelte-1s4xdez{padding:10px 0px;font-size:1.5em;display:flex;list-style:none;justify-content:space-around}a.svelte-1s4xdez{color:black}a.svelte-1s4xdez:hover{color:grey}
+.icon.svelte-1nvbvo2{position:relative;display:inline-block}
+h1.svelte-1tppwhk{color:#ff3e00;text-transform:uppercase;font-size:4em;font-weight:100}
+.experience.svelte-1xdm3ov{display:flex;flex-direction:column;align-items:center}section.svelte-1xdm3ov{display:flex;flex-direction:column;align-items:center;width:clamp(100px, 30vw, 600px);padding:10px;text-align:left;margin-bottom:10px}.experience.svelte-1xdm3ov:last-child{margin-bottom:0px}.funkcje.svelte-1xdm3ov{border:1px solid red}.technologie.svelte-1xdm3ov{border:1px solid green}
+
+/*# sourceMappingURL=bundle.css.map */

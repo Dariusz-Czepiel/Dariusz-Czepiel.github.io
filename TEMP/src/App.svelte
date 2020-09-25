@@ -1,4 +1,4 @@
-<script lang="ts">
+<script lang="typescript">
 	import page from 'page';
 	import MainNav from './MainNav.svelte';
 	import MainFooter from './MainFooter.svelte';

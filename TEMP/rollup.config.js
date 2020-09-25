@@ -7,7 +7,6 @@ import sveltePreprocess from 'svelte-preprocess';
 import typescript from '@rollup/plugin-typescript';
 
 const production = !process.env.ROLLUP_WATCH;
-const site = true;
 
 export default [{
 	input: 'src/main.ts',
@@ -39,10 +38,7 @@ export default [{
 			dedupe: ['svelte']
 		}),
 		commonjs(),
-		typescript({
-			sourceMap: !production,
-			inlineSources: !production
-		}),
+		typescript({ sourceMap: !production }),
 
 		// In dev mode, call `npm run start` once
 		// the bundle has been generated
@@ -55,10 +51,7 @@ export default [{
 		// If we're building for production (npm run build
 		// instead of npm run dev), minify
 		production && terser()
-	],
-	watch: {
-		clearScreen: false
-	}
+	]
 },
 {
 	input: 'src/main.ts',
@@ -71,7 +64,7 @@ export default [{
 	plugins: [
 		svelte({
 			// enable run-time checks when not in production
-			dev: !site,
+			dev: false,
 			// we'll extract any component CSS out into
 			// a separate file - better for performance
 			css: css => {
@@ -90,26 +83,20 @@ export default [{
 			dedupe: ['svelte']
 		}),
 		commonjs(),
-		typescript({
-			sourceMap: !site,
-			inlineSources: !site
-		}),
+		typescript({ sourceMap: false }),
 
 		// In dev mode, call `npm run start` once
 		// the bundle has been generated
-		!site && serve(),
+		false && serve(),
 
 		// Watch the `public` directory and refresh the
 		// browser on changes when not in production
-		!site && livereload('public'),
+		false && livereload('public'),
 
 		// If we're building for production (npm run build
 		// instead of npm run dev), minify
-		site && terser()
-	],
-	watch: {
-		clearScreen: false
-	}
+		true && terser()
+	]
 }];
 
 function serve() {

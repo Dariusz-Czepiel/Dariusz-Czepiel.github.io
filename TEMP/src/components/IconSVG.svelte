@@ -30,7 +30,7 @@
         // })
     }
     else
-        paths = [d];
+    paths = [d];
 
 </script>
 
