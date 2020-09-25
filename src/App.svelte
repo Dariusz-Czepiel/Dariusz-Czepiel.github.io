@@ -28,6 +28,13 @@
 </footer>
 
 <style>
+	:global(body) {
+		color: #333;
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Roboto', sans-serif;
+	}
 	header{
 		background-color: antiquewhite;
 		position: sticky;
@@ -41,14 +48,6 @@
 	}
 	main {
 		text-align: center;
-		max-width: 240px;
-		padding: 1em;
 		margin: 0 auto;
-		height: 100%;
-	}
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
 	}
 </style>
