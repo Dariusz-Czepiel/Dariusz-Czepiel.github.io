@@ -1,13 +1,17 @@
+<script>
+import Dev from "../components/Dev.svelte";
+
+</script>
 <div class="experience">
     <section class="funkcje">
         <div>
             <h2>Jakie pełniłem funkcje w projektach?</h2>
-            <small><i>Wylistuj jakie/ile projektów z krótkim opisem</i></small>
+            <Dev><small><i>Wylistuj jakie/ile projektów z krótkim opisem</i></small></Dev>
             <h4>Full-stack developer:</h4>
                 <ul>
                     <li>Cos tu bedzie</li>
                 </ul>
-            <small><i>Powinny być dwa poziomy listy</i></small>
+            <Dev><small><i>Powinny być dwa poziomy listy</i></small></Dev>
             <h4>Back-end developer:</h4>
             <ul>
                 <li>Usługi Windows synchronizujące dane pomiędzy systemami</li>
@@ -22,7 +26,7 @@
     <section class="technologie">
         <div>
             <h2>W jakich techonolgiach pracuje?</h2>
-            <small><i>Zrob do tego ładne ikonki</i></small>
+            <Dev><small><i>Zrob do tego ładne ikonki</i></small></Dev>
             <p>
                 C#: .NET, .NET Core, ASP.NET Core
             </p>

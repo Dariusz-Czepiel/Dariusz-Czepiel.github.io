@@ -1,8 +1,12 @@
+<script>
+import Dev from "./components/Dev.svelte";
+
+</script>
 <nav>
     <div><a href="/">Strona główna</a></div>
     <div><a href="/experience">Doświadczenie</a></div>
     <div><a href="/projects">Projekty</a></div>
-    <div><a href="/testIcons">TestIcons</a></div>
+    <Dev><div><a href="/testIcons">TestIcons</a></div></Dev>
 </nav>
 
 <style>

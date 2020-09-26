@@ -4,5 +4,5 @@
 </script>
 
 {#if !isProd}
-    <div> test </div>
+    <slot></slot>
 {/if}

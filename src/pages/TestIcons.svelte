@@ -1,5 +1,5 @@
 <script>
-import Dev from "../components/Dev.svelte";
+//import Dev from "../components/Dev.svelte";
 
 </script>
 <div>
@@ -7,6 +7,4 @@ import Dev from "../components/Dev.svelte";
     <svg class="bi" width="64" height="64" fill="currentColor">
         <use xlink:href="bootstrap-icons.svg#telephone-inbound-fill" />
     </svg>
-
-    <Dev />
 </div>

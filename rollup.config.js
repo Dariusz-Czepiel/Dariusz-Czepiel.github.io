@@ -82,7 +82,7 @@ export default [{
 		replace({
 			__myapp: JSON.stringify({
 				env: {
-					isProd: production,
+					isProd: site,
 					...config().parsed // attached the .env config
 				}
 			}),

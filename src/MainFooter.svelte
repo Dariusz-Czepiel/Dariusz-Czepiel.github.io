@@ -1,6 +1,5 @@
 <script lang="ts">
     import Dev from './components/Dev.svelte';
-import IconSVG from './components/IconSVG.svelte';
 
 </script>
 
@@ -13,9 +12,10 @@ import IconSVG from './components/IconSVG.svelte';
     </div>
     <div class="footer-elem">
         <!-- <IconSVG d={call} color="black" filled /> -->
+        
         +48 794 075 281
     </div>
-    <small><i>linki do portali (linkedin, github)</i></small>
+    <Dev><small><i>linki do portali (linkedin, github)</i></small></Dev>
 </div>
 
 <style>
