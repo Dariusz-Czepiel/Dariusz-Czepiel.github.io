@@ -1,6 +1,5 @@
 <script lang="ts">
     import IconSVG from './components/IconSVG.svelte';
-    import { call, mailOutline } from 'ionicons/icons';
 
 </script>
 
@@ -12,7 +11,7 @@
         dariusz.czepiel@protonmail.com
     </div>
     <div class="footer-elem">
-        <IconSVG d={call} color="black" filled />
+        <!-- <IconSVG d={call} color="black" filled /> -->
         +48 794 075 281
     </div>
     <small><i>linki do portali (linkedin, github)</i></small>
