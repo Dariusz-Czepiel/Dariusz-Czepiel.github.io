@@ -79,6 +79,14 @@ export default [{
 		file: 'docs/bundle.js'
 	},
 	plugins: [
+		replace({
+			__myapp: JSON.stringify({
+				env: {
+					isProd: production,
+					...config().parsed // attached the .env config
+				}
+			}),
+		}),
 		svelte({
 			// enable run-time checks when not in production
 			dev: !site,
