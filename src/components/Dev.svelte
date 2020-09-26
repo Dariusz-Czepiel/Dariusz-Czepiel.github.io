@@ -1,6 +1,6 @@
 <script>
-    const isProd = __myapp.env.isProd
-    console.log(isProd);
+    const isProd = __myapp?.env?.isProd ?? true;
+    console.log(__myapp.env.isProd);
 </script>
 
 {#if !isProd}
