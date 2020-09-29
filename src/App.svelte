@@ -1,27 +1,26 @@
 <script lang="ts">
-	import page from 'page';
+	//import page from 'page';
 	import MainNav from './MainNav.svelte';
 	import MainFooter from './MainFooter.svelte';
+	import Router from 'svelte-spa-router';
 	import Experience from './pages/Experience.svelte';
 	import Projects from './pages/Projects.svelte';
 	import AboutMe from './pages/AboutMe.svelte';
 	import TestIcons from './pages/TestIcons.svelte';
 
-	let current = AboutMe;
-
-	page('/', () => current = AboutMe);
-  	page('/experience', () => current = Experience);
-	page('/projects', () => current = Projects);
-	page('/testIcons', () => current = TestIcons);
-
-	page.start();
+	const routes = {
+		'/': AboutMe,
+		'/experience': Experience,
+		'/projects': Projects,
+		'/testIcons': TestIcons
+	};
 </script>
 
 <header>
 	<MainNav />
 </header>
 <main>
-	<svelte:component this={current} />
+	<Router {routes} />
 </main>
 <footer>
 	<MainFooter />
